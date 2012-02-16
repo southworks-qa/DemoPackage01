@@ -1,0 +1,33 @@
+﻿                <div class="AspNet-Menu-Horizontal" id="ctl00_TopNavMenu">
+                    <ul class="AspNet-Menu">
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Home", currentPage); #>">
+                            <a id="leftMenu" class="AspNet-Menu-Link<# PrintSelected("Home", currentPage); #>" href="default.htm">Home</a>
+                        </li>
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Labs", currentPage); #>">
+                            <a class="AspNet-Menu-Link<# PrintSelected("Labs", currentPage); #>" href="labs.htm">Hands-on Labs</a>
+                        </li>
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Demos", currentPage); #>">
+                            <a class="AspNet-Menu-Link<# PrintSelected("Demos", currentPage); #>" href="demos.htm">Demos</a>
+                        </li>
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Samples", currentPage); #>">
+                            <a class="AspNet-Menu-Link<# PrintSelected("Samples", currentPage); #>" href="samples.htm">Samples</a>
+                        </li>
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Presentations", currentPage); #>">
+                            <a class="AspNet-Menu-Link<# PrintSelected("Presentations", currentPage); #>" href="presentations.htm">Presentations</a>
+                        </li>
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Videos", currentPage); #>">
+                            <a class="AspNet-Menu-Link<# PrintSelected("Videos", currentPage); #>" href="videos.htm">Videos</a>
+                        </li> 
+                        <li class="AspNet-Menu-Leaf<# PrintSelected("Prerequisites", currentPage); #>">
+                            <a id="rightMenu" class="AspNet-Menu-Link<# PrintSelected("Prerequisites", currentPage); #>" href="prerequisites.htm">Prerequisites</a>
+                        </li>
+                    </ul>
+                </div>
+<#+ 
+void PrintSelected(string item, string currentPage){
+	if(currentPage == item) 
+	{
+		Write(" AspNet-Menu-Selected"); 
+	}
+}
+#>

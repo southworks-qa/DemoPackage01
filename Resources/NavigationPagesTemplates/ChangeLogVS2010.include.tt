@@ -1,0 +1,497 @@
+<h2>April 2011 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Authenticating Users in a Windows Phone 7 App via ACS, OData Services and Windows Azure</strong>
+    <ul>
+      <li>New Hands-On lab</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to the AppFabric ACS 2.0</strong>
+    <ul>
+      <li>Lab updated to ACS 2.0 and latest AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Use ACS to Federate with Multiple Business Identity Providers</strong>
+    <ul>
+      <li>Lab updated to ACS 2.0 and latest AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Eventing on the Service Bus</strong>
+    <ul>
+      <li>Lab updated to latest AppFabric portal experience</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Service Bus Futures</strong>
+    <ul>
+      <li>Lab updated to latest AppFabric portal experience</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Service Remoting</strong>
+    <ul>
+      <li>Lab updated to latest AppFabric portal experience</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Rafiki</strong>
+    <ul>
+      <li>Demo updated to latest AppFabric portal experience</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Service Bus Demos</strong>
+    <ul>
+      <li>Demos updated to use latest AppFabric portal</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>March 2011 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>SQL Azure Reporting Services for Visual Studio 2010</strong>
+    <ul>
+      <li>New Hands-On lab</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Use ACS to Federate With Multiple IPs</strong>
+    <ul>
+      <li>Lab updated with ACS Management Service reference</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Dependency Checker</strong>
+    <ul>
+      <li>Updated to verify Windows Azure SDK v1.4 </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Rafiki</strong>
+    <ul>
+      <li>Demo fixed to use the installed version of AppFabric SDK v2</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Windows Azure</strong>
+    <ul>
+      <li>Lab fixed minor documentation issues</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Worker Role Communication</strong>
+    <ul>
+      <li>Lab fixed minor documentation issues</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>February 2011 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Building Windows Azure Apps with Caching service</strong>
+    <ul>
+      <li>Lab updated to new AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to the Windows Azure AppFabric Service Bus Futures</strong>
+    <ul>
+      <li>Lab updated to new AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to the AppFabric Access Control Service V2</strong>
+    <ul>
+      <li>Lab updated to new AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Use Access Control Service to Federate with Multiple Business Identity Providers</strong>
+    <ul>
+      <li>Lab updated to new AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Rafiki</strong>
+    <ul>
+      <li>Demo updated to new AppFabric portal</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Advanced Web and Worker Roles</strong>
+    <ul>
+      <li>Fixed PHP installer script from Exercise 3</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Training Kit</strong>
+    <ul>
+      <li>Cleaned up dependency checker scripts</li>
+      <li>Updated dependency checker configuration files to work with Windows 7 SP1 (build 7601)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>January 2011 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Windows Azure Connect</strong>
+    <ul>
+      <li>New demo</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Web and Worker Role Enhancements</strong>
+    <ul>
+      <li>New demo script</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Virtual Machine Roles</strong>
+    <ul>
+      <li>New demo script</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Rafiki</strong>
+    <ul>
+      <li>New demo script</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Phone 7 and The Cloud</strong>
+    <ul>
+      <li>New hands-on lab</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Training Kit</strong>
+    <ul>
+      <li>Improved code snippets installation</li>
+      <li>Fixed bugs in labs and demos</li>
+      <li>Fixed bugs in setup scripts</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>December 2010 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Windows Azure Training Kit Demos</strong>
+    <ul>
+      <li>Updated to use Azure Tools and SDK 1.3</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Identity and Access Control in the Cloud</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to SQL Azure Reporting</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Advanced SQL Azure</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>		
+  <li>
+    <strong>Windows Azure Marketplace DataMarket</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>			
+  <li>
+    <strong>Managing, Debugging, and Monitoring Windows Azure</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>			
+  <li>
+    <strong>Building Low Latency Web Applications</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>			
+  <li>
+    <strong>Windows Azure AppFabric Service Bus</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Connect</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>			
+  <li>
+    <strong>Moving Applications to the Cloud with VM Role</strong>
+    <ul>
+      <li>New presentation</li>
+    </ul>
+  </li>  
+  <li>
+    <strong>Deploying and Managing SQL Azure Databases with Visual Studio 2010 Data-tier Applications</strong>
+    <ul>
+      <li>New demo script</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>November 2010 Update</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Advanced Web and Worker Role</strong>
+    <ul>
+      <li>New hands-on lab</li>
+      <li>C# support</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Connecting Apps With Windows Azure Connect</strong>
+    <ul>
+      <li>New hands-on lab</li>
+      <li>C# support</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Virtual Machine Role</strong>
+    <ul>
+      <li>New hands-on lab</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Windows Azure Marketplace DataMarket</strong>
+    <ul>
+      <li>Updated for the final release of the Windows Azure Marketplace DataMarket (formerly known as Microsoft Codename "Dallas")</li>
+      <li>Updated to use the new portal experience and the "add service reference" feature from Visual Studio for consuming DataMarket feeds.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Training Kit Labs</strong>
+    <ul>
+      <li>Updated to use Azure Tools and SDK 1.3</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Windows Azure</strong>
+    <ul>
+      <li>Updated to the new Portal Experience</li>
+      <li>Updated to use Azure Tools and SDK 1.3</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to SQL Azure</strong>
+    <ul>
+      <li>Updated to the new Windows Azure platform Portal</li>
+      <li>Updated to use the Windows Azure Tools for Visual Studio version 1.3</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure CDN</strong>
+    <ul>
+      <li>New hands-on lab</li>
+      <li>C# support</li>
+    </ul>
+  </li>
+	<li>
+		<strong>Introduction to the Windows Azure AppFabric Service Bus Futures</strong>
+		<ul>
+      <li>New hands-on lab</li>
+			<li>C# support</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Building Windows Azure Apps with Cache Service</strong>
+		<ul>
+      <li>New hands-on lab</li>
+			<li>C# support</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Introduction to the AppFabric Access Control Service V2</strong>
+		<ul>
+      <li>New hands-on lab</li>
+			<li>C# support</li>
+		</ul>
+	</li>
+	<li>
+		<strong>Part 1: Introduction to the AppFabric Service Bus</strong>
+		<ul>
+			<li>Updated Exercise 3 "Multicast Messaging Through the Service Bus" updated to show a WPF  worker role management application that demonstrates multicast messaging through the Service Bus</li>			
+		</ul>
+	</li>
+</ul>
+
+<h2>September 2010 Release</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Introduction to the AppFabric Access Control Service (September 2010 Labs Release)</strong>
+    <ul>
+      <li>New hands-on lab</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Debugging Applications in Windows Azure</strong>
+    <ul>
+      <li>New hands-on lab</li>
+      <li>Visual Studio 2010 .NET Framework 4 version</li>
+      <li>C# and VB.NET support</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to the AppFabric Service Bus</strong>
+    <ul>
+      <li>
+        Updated to split the hands-on lab in 2 separate parts
+        <ul>
+          <li>Introduction to the AppFabric Service Bus - Part 1</li>
+          <li>Introduction to the AppFabric Service Bus - Part 2</li>
+        </ul>
+      </li>
+      <li>Created a new exercise - Connecting a WCF Service in IIS 7.5 to the Service Bus</li>      
+    </ul>
+  </li>
+</ul>
+
+<h2>August 2010 Release</h2>
+<ul class="getStartedList">
+  <li>
+    <strong>Asynchronous Workload Handling</strong>
+    <ul>
+      <li>New hands-on lab</li>
+      <li>Visual Studio 2010 .NET Framework 4 version</li>
+      <li>C# and VB.NET support</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Windows Azure</strong>
+    <ul>
+      <li>Updated to .NET Framework 4</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Exercise 1 split into two separate exercises</li>
+      <li>New section on using Storage Explorer in Windows Azure Tools for Visual Studio</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Deploying Applications in Windows Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Updated solutions to .NET Framework 4</li>
+      <li>Created a new exercise - Using Visual Studio to Deploy Applications</li>
+      <li>Removed Monitoring exercise</li>
+      <li>Removed Monitoring code from SSL exercise solutions</li>
+      <li>Upgraded AspProviders to latest version (common to all labs)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Worker Role Communication</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Fixed minor bug in SessionManager class</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Exploring Windows Azure Storage</strong>
+    <ul>
+      <li>Updated to .NET Framework 4</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Updated steps to open Azure Drive folder</li>
+      <li>Fixed bug in the VHDUpload tool where upload failed if container was missing</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Service Bus</strong>
+    <ul>
+      <li>Updated to .NET Framework 4</li>
+      <li>Upgraded to AppFabric SDK - July 2010 Update</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Service Remoting with Service Bus</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2 and AppFabric SDK - July 2010 Update</li>
+      <li>Fixed minor bug in CrmDataService class and PathTooLong errors</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Eventing with Service Bus</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Updated to AppFabric SDK - July 2010 Update</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Building Web Form Apps with Windows Azure</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Live ID exercise removed</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Building MVC Apps with Windows Azure</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Live ID exercise removed</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to SQL Azure</strong>
+    <ul>
+      <li>Updated VS2010 version to .NET Framework 4</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+    </ul>
+  </li>
+  <li>
+    <strong>SQL Azure Tips and Tricks</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Updated Metrics exercise output and fixed bug in VB version</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Native</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Enhanced troubleshooting section</li>
+      <li>Fixed incorrect calling convention in p/invoke signature and project build order bug</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure PHP</strong>
+    <ul>
+      <li>Added Visual Studio 2010 / .NET Framework 4 version</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Tested with the latest PHP release (v5.3.2)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Dallas</strong>
+    <ul>
+      <li>Updated to .NET Framework 4</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Federated Authentication in a Windows Azure Web Role Application</strong>
+    <ul>
+      <li>Updated to .NET Framework 4</li>
+    </ul>
+  </li>
+</ul>

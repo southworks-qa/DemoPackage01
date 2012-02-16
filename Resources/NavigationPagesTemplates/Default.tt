@@ -1,0 +1,68 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Home";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+    <h1>Windows Azure Platform Training Kit</h1>
+	
+	The Windows Azure Platform Training Kit includes hands-on labs, presentations, and samples to help you understand 
+	how to build applications that utilize Windows Azure, SQL Azure, and the Windows Azure AppFabric. <br />
+	<br />
+	<b>Please note:</b> The hands-on labs and demos in this kit requires you to have developer accounts for the 
+	Windows Azure, SQL Azure and Windows Azure AppFabric.
+	To register for an account, please visit the <a href="http://go.microsoft.com/fwlink/?LinkId=130846">Windows Azure site</a>.
+    <br />
+    <br />
+    <h1>What is the Windows Azure Platform?</h1>
+
+	The Windows Azure Platform is an 
+	internet-scale cloud services platform hosted in 
+	Microsoft data centers, which provides an operating 
+	system and a set of developer services that can be used 
+	individually or together. Windows Azure Platform's flexible and 
+	interoperable platform can be used to build new 
+	applications to run from the cloud or enhance existing 
+	applications with cloud-based capabilities. 
+	<a href="http://www.azure.com">Learn more...</a>
+    <br />
+    <br />
+	<h1>What&#39;s new in this release?</h1>
+	The April 2011 update of the training kit includes the following updates:
+	<br/>
+	  <# if (Package.Id.Contains("2008"))
+        {
+        #>  
+		<br/>
+            <ul>				
+				<li>Updated all labs to Windows Azure Tools v1.3</li>								
+			</ul>
+        <#    
+        }
+        else
+        {
+        #>
+		<br/>
+		<ul>
+			<li>[New] Authenticating Users in a Windows Phone 7 App via ACS, OData Services and Windows Azure lab</li>
+			<li>[Updated] Introduction to the AppFabric ACS 2.0 lab updated to latest AppFabric portal</li>
+			<li>[Updated] Use ACS to Federate with Multiple Business Identity Providers lab updated to latest AppFabric portal</li>
+			<li>[Updated] Eventing on the Service Bus lab updated to latest AppFabric portal</li>
+			<li>[Updated] Introduction to Service Bus Futures lab updated to latest AppFabric portal</li>
+			<li>[Updated] Service Remoting lab updated to latest AppFabric portal</li>
+			<li>[Updated] Rafiki demo updated to latest AppFabric portal</li>
+			<li>[Updated] Service Bus demos updated to latest AppFabric portal</li>
+		</ul>
+        <#    
+        }
+        #>
+	For a full list of changes in this release, please see the <a href="ChangeLog.htm">change log</a>.
+</div>
+<#@ include file="Master.Footer.include.tt" #>

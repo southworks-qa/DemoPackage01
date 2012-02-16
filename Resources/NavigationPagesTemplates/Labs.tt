@@ -1,0 +1,98 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Labs";
+#>
+<#@ include file="Master.Header.include.tt" #>
+                <div class="twoColWrapper_80_20">
+                    <div class="col01">
+                        <h1>Hands-on Labs</h1>
+                        
+                    <# var labs = Package.Units.SelectMany(u => u.Labs); 
+					   if(labs.Count() == 0) 
+					   { 
+					#>     <p>Labs are comming soon!</p>
+					<# }
+					   else
+					   {
+					#>
+                    <p>
+                    	This page lists the hands-on labs that are included with the <#= Package.Name #>. The labs documents are included in htm format (.htm). Please install the necessary prerequisites and follow the setup procedures described in each lab manual before starting to work through a hands-on lab.
+                    </p>
+                    <p>
+						All the hands-on labs have been designed for the <a href="http://go.microsoft.com/fwlink/?LinkID=128752">Windows Azure Tools for Visual Studio version 1.3</a>
+                    </p>
+                    <# 
+					   }  // else empty Labs
+					#>
+                
+					<# foreach (Unit unit in Package.Units)
+					     {
+					     
+							if (unit.Labs.Count() > 0)
+							{
+					#>
+						<div class="hr"><img src="images/hr-gradient-right-side.jpg" /></div>
+                        <a name="<#= TrimAndEscape(unit.Id) #>"></a>
+                        <h2><#= unit.Name #></h2>
+                        <ul class="getStartedList">
+								<# foreach (Lab lab in unit.Labs)
+								{
+								#>
+							<li>
+								<a name="<#= lab.Id #>"></a><strong><#= lab.Title #></strong>
+								<br />
+								<#= lab.Description #>
+								<br />
+								<ul class="anchorLinks">
+									<li><a href="<#= String.IsNullOrEmpty(lab.Document.DocumentLink) ? "#" : Path.Combine(lab.DestinationPath, lab.Document.DocumentLink) #>">Lab Manual</a></li>
+									<li><a href="<#= Path.Combine(lab.DestinationPath, lab.Source) #>">Lab Files</a></li>
+									<# if ( lab.DependencyChecker != null && !String.IsNullOrEmpty(lab.DependencyChecker.DependenciesFile) ) { #>
+									<li><a href="dep://<#= Path.Combine(lab.DestinationPath, lab.DependencyChecker.DependenciesFile) #>" onclick="return CheckDC('2.0.0');">Setup Lab</a></li>
+									<li class="last"><a href="./Assets/html/DocSet_default.html">Setup Instructions</a></li>
+									<# } #>									
+								</ul>
+							</li>
+								<#   } // foreach lab #>
+						</ul>
+						<p><a href="#top">Top of page</a></p>
+							<#
+							} // if labs
+						 } //foreach unit	#>
+					</div>
+                    <div class="vr">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col02">
+						<h2>Navigate by Service</h2>
+						<# foreach (Unit unit in Package.Units)
+					     {
+							if (unit.Labs.Count() > 0)
+							{ #>
+							  <a href="#<#= TrimAndEscape(unit.Id) #>"><#= unit.Name #></a>
+							  <div class="hrSmColumn">
+							  </div>
+						 <# } #>
+						<# } #>
+					</div>
+					<div class="clearBoth">
+                    </div>
+                </div>
+<#@ include file="Master.Footer.include.tt" #>
+<#+ 
+string TrimAndEscape(string text)
+{
+    return text.Trim().Replace(' ', '_');
+}
+ #>

@@ -1,0 +1,95 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Prerequisites";
+
+var prerequisiteGroups = Package.PrerequisitesGroups.OrderBy(g => g.Order);
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="twoColWrapper_80_20">
+    <div class="col01">
+        <h1>Prerequisites</h1>
+        This page lists the prerequisites for the Windows Azure 
+		Platform Training Kit.
+		<br /><br /><br />
+		
+		If you want to use the entire kit, then you can check for all of the dependencies for all hands-on labs and demos:
+		<a href="dep://./Assets/Setup/dependencies.dep" onclick="return CheckDC('2.0.0');">Check dependencies</a>.
+		<br /><br /><br />
+		For additional information about the setup procedure, refer to the <a href="./Assets/html/DocSet_default.html">Setup Instructions</a>.
+		<br /><br /><br />
+        <# 
+		foreach(var group in prerequisiteGroups)
+		{
+	    #>
+  		<div class="hr"><img src="images/hr-gradient-right-side.jpg" /></div>
+        <a name="<#= TrimAndEscape(group.Name) #>"></a>
+        <h2><#= group.Name #></h2>
+        <ul class="getStartedList">
+	      <# 
+		  foreach(var prerequisite in group.Prerequisites)
+		  {
+	      #>	
+	        <li>
+	        <# 
+				if(!string.IsNullOrEmpty(prerequisite.Link))
+				{
+			#>
+				<strong><a href="<#=  prerequisite.Link #>"><#=  prerequisite.Name #></a></strong>
+			<# 
+				} // end if
+				else
+				{
+			#>
+				<strong><#=  prerequisite.Name #></strong>
+			<# 
+				} // else                                                
+				if(!string.IsNullOrEmpty(prerequisite.Description))
+				{
+			#>
+				<br/>
+				<#=  prerequisite.Description #><br />
+			<# 
+				} // end if
+			#>
+			</li>
+		  <# 
+		  } // end foreach prerequisite
+		  #>
+	    </ul>
+	<#      
+	   }  // end foreach group
+	#>
+	</div>
+    <div class="vr">
+        <div>
+        </div>
+    </div>
+    <div class="col02">
+		<h2>Prerequisites</h2>
+		<#
+		foreach(var group in prerequisiteGroups)
+		{
+	    #>
+	    <a href="#<#=  TrimAndEscape(group.Name) #>" tabindex="16"><#=  group.Name #></a>
+	    <div class="hrSmColumn"></div>
+	    <#
+		}	// end foreach
+	    #>
+	</div>
+	<div class="clearBoth">
+    </div>
+</div>
+<#@ include file="Master.Footer.include.tt" #>
+<#+ 
+string TrimAndEscape(string text)
+{
+    return text.Trim().Replace(' ', '_');
+}
+ #>

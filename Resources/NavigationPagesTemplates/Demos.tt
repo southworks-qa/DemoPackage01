@@ -1,0 +1,99 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Demos";
+#>
+<#@ include file="Master.Header.include.tt" #>
+                <div class="twoColWrapper_80_20">
+                    <div class="col01">
+                        <h1>Demos</h1>
+                        
+                    <# var demos = Package.Units.SelectMany(u => u.Demos); 
+					   if(demos.Count() == 0) 
+					   { 
+					#>     <p>Demos will be updated after PDC 2009 with all of the latest and greatest demos.</p>
+					<# }
+					   else
+					   {
+					#>
+                    <p>
+						This page lists the demos that are included in the <#= Package.Name #>.
+                    	&nbsp;These demos include the source code and demo scripts.  These demos are primarily intended for someone to use when delivering a presentation or demo in a training workshop.  
+                    </p>
+                    <p>
+						All demos have been designed for the <a href="http://go.microsoft.com/fwlink/?LinkId=128752">Windows Azure Tools for Visual Studio version 1.3</a>. 
+                    </p>
+                    <# 
+					   }  // else empty Demos
+					#>
+                
+					<# foreach (Unit unit in Package.Units)
+					     {
+					     
+							if (unit.Demos.Count() > 0)
+							{
+					#>
+						<div class="hr"><img src="images/hr-gradient-right-side.jpg" /></div>
+                        <a name="<#= TrimAndEscape(unit.Id) #>"></a>
+                        <h2><#= unit.Name #></h2>
+                        <ul class="getStartedList">
+								<# foreach (Demo demo in unit.Demos)
+								{
+								#>
+							<li>
+								<strong><#= demo.Title #></strong><br /><#= demo.Description #><br />
+								<ul class="anchorLinks">
+									<li><a href="<#= String.IsNullOrEmpty(demo.Document.DocumentLink) ? "#" : Path.Combine(demo.DestinationPath, demo.Document.DocumentLink) #>">Demo Script (html)</a></li>
+									<li><a href="<#= Path.Combine(demo.DestinationPath, demo.Document.RelativePath) #>">Demo Script (docx)</a></li>									
+									<li><a href="<#= Path.Combine(demo.DestinationPath, demo.Source) #>">Demo Files</a></li>			
+									<# if (demo.CustomProperties.ContainsKey("DemoPresentation")) { #>
+									<li><a href="<#=Path.Combine(demo.DestinationPath, demo.CustomProperties["DemoPresentation"]) #>">Demo Presentation</a></li>																		
+									<# } #>
+									<# if ( demo.DependencyChecker != null && !String.IsNullOrEmpty(demo.DependencyChecker.DependenciesFile) ) { #>
+									<li class="last"><a href="dep://<#= Path.Combine(demo.DestinationPath, demo.DependencyChecker.DependenciesFile) #>" onclick="return CheckDC('2.0.0');">Setup Demo</a></li>																		
+									<# } #>
+								</ul>
+							</li>
+								<#   } // foreach demo #>
+						</ul>
+						<p><a href="#top">Top of page</a></p>
+							<#
+							} // if demos
+						 } //foreach unit	#>
+					</div>
+                    <div class="vr">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col02">
+						<h2>Navigate by Service</h2>
+						<# foreach (Unit unit in Package.Units)
+					     {
+							if (unit.Demos.Count() > 0)
+							{ #>
+							  <a href="#<#= TrimAndEscape(unit.Id) #>"><#= unit.Name #></a>
+							  <div class="hrSmColumn">
+							  </div>
+						 <# } #>
+						<# } #>
+					</div>
+					<div class="clearBoth">
+                    </div>
+                </div>
+<#@ include file="Master.Footer.include.tt" #>
+<#+ 
+string TrimAndEscape(string text)
+{
+    return text.Trim().Replace(' ', '_');
+}
+ #>

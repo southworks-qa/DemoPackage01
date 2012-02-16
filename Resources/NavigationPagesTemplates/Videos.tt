@@ -1,0 +1,98 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Videos";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<script type="text/javascript" src="scripts/VideoPlayer/MicrosoftAjax.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/Silverlight.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/SilverlightControl.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/SilverlightMedia.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/ExpressionPlayer.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/PlayerStrings.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/player.js"></script>
+<script type="text/javascript" src="scripts/VideoPlayer/StartPlayer.js"></script>
+
+                <div class="twoColWrapper_80_20">
+                    <div class="col01">
+                        <h1>Videos</h1>
+                        
+                    <# var videos = Package.Units.SelectMany(u => u.Videos); 
+					   if(videos.Count() == 0) 
+					   { 
+					#>     <p>Videos are coming soon.</p>
+					<# }
+					   else
+					   {
+					#>
+                    <p>
+						This page lists the videos that are included in the <#= Package.Name #>.                    	
+                    </p>
+                    <# 
+					   }  // else empty Videos
+					#>
+					<# foreach (Unit unit in Package.Units)
+					 {
+						if (unit.Videos.Count() > 0)
+						{
+					 #>
+						 
+					    <div class="hr"><img src="images/hr-gradient-right-side.jpg" /></div>
+                        <a name="<#= TrimAndEscape(unit.Id) #>"></a>
+                        <h2><#= unit.Name #></h2> 				     
+					     
+                        <ul class="getStartedList">
+								<# foreach (Video video in unit.Videos)
+								{
+								#>
+							<li>
+								<a name="<#= video.Id #>"></a><strong><#= video.Title #></strong><br /><#= video.Abstract #><br /><br />
+								<# if (video.CustomProperties.ContainsKey("PlayerUrl") && !String.IsNullOrEmpty(video.CustomProperties["PlayerUrl"]))  { #><iframe src="<#= video.CustomProperties["PlayerUrl"] #>" width="320px" height="240px" frameborder="no" scrolling="no" marginheight="0" marginwidth="0"></iframe><# } #>
+								<div>
+								</div>
+							</li>
+								<#   } // foreach video #>
+						</ul>
+						<p><a href="#top">Top of page</a></p>
+						<#
+						} // if videos
+						#>
+						 					
+					<# } //foreach unit #>
+					</div>
+                    <div class="vr">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col02">
+						<h2>Navigate by Service</h2>
+						<# foreach (Unit unit in Package.Units)
+					     {
+							if (unit.Videos.Count() > 0)
+							{ #>
+							  <a href="#<#= TrimAndEscape(unit.Id) #>"><#= unit.Name #></a>
+							  <div class="hrSmColumn">
+							  </div>
+						 <# } #>
+						<# } #>
+					</div>
+					<div class="clearBoth">
+                    </div>
+                </div>
+<#@ include file="Master.Footer.include.tt" #>
+<#+ 
+string TrimAndEscape(string text)
+{
+    return text.Trim().Replace(' ', '_');
+}
+ #>

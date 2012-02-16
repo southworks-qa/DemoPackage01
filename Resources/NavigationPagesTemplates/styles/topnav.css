@@ -1,0 +1,141 @@
+﻿.AspNet-Menu-Horizontal
+{
+	position:			relative;
+	height:				39px;
+	z-index:			1000;
+}
+ul.AspNet-Menu
+{
+	height:				40px;
+}
+ul.AspNet-Menu li
+{
+	margin-bottom:		0;
+}
+ul.AspNet-Menu a
+{
+	background:         url("../images/nav-bg-square.png") no-repeat scroll 0 0 transparent;
+}
+
+/* tier 1 nav */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren > a,
+ul.AspNet-Menu li.AspNet-Menu-Leaf > a
+{
+	width:				113px;
+	height:				25px;
+	padding-top:		8px;
+	text-align:			center;
+	margin-right:		2px;
+	border:				0px solid #a6a6a6;
+	font-size:			14px;
+	color:				#FFFFFF;
+}
+ul.AspNet-Menu li.AspNet-Menu-WithChildren + li > a,
+ul.AspNet-Menu li.AspNet-Menu-Leaf + li > a
+{
+	border-left:		none;
+}
+
+#leftMenu {
+	background:			url("../images/nav-bg-left.png") no-repeat scroll 0 0 transparent;
+}
+
+#leftMenu.active {
+	background:			url("../images/nav-bg-left-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#leftMenu:hover, ul.AspNet-Menu li.childHover #leftMenu
+{
+	background:			url("../images/nav-bg-left-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#leftMenu:hover, ul.AspNet-Menu li.AspNet-Menu-Selected  #leftMenu
+{
+	background:			url("../images/nav-bg-left-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#rightMenu {
+	background:			url("../images/nav-bg-right.png") no-repeat scroll 0 0 transparent;
+}
+
+#rightMenu.active {
+	background:			url("../images/nav-bg-right-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#rightMenu:hover, ul.AspNet-Menu li.childHover #rightMenu
+{
+	background:			url("../images/nav-bg-right-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#rightMenu:hover, ul.AspNet-Menu li.AspNet-Menu-Selected  #rightMenu
+{
+	background:			url("../images/nav-bg-right-hover.png") no-repeat scroll 0 0 transparent;
+}
+
+ul.AspNet-Menu > li.AspNet-Menu-Selected > a,
+ul.AspNet-Menu li.AspNet-Menu-ChildSelected > a
+{
+	background:			transparent url('../images/nav-bg-square-hover.png') 0 0 no-repeat;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren > a:hover,
+ul.AspNet-Menu li.AspNet-Menu-Leaf > a:hover,
+ul.AspNet-Menu li.childHover > a
+{
+	background:	transparent url('../images/nav-bg-square-hover.png') 0 0 no-repeat;	
+	color:				#000000;
+}
+
+
+/* tier 2 nav */
+ul.AspNet-Menu li ul
+{
+	width:				130px;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren + li ul,
+ul.AspNet-Menu li.AspNet-Menu-Leaf + li ul
+{
+	left:				-1px;
+}
+
+ul.AspNet-Menu li ul li
+{
+	float:				none;
+}
+ul.AspNet-Menu li.childHover ul
+{
+	visibility:			visible;
+}
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf
+{
+
+}
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a
+{
+	/* Override inherited styles from tier 1 .AspNet-Menu-Leaf */
+	background-color:	#FFFFFF;
+	text-align:			left;
+	border:				1px solid #afafaf;
+	border-top:			none;
+	width:				130px;
+	height:				30px;
+
+
+	padding:			15px 0 0 20px;
+	font-weight:		normal;
+	color:				#000;
+	font-size:			11px;
+	text-decoration:	none;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf + li.AspNet-Menu-Leaf a
+{
+	border-left:		1px solid #afafaf;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a.AspNet-Menu-Selected,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a:hover
+{
+	background-color:	#ebffc1;
+}

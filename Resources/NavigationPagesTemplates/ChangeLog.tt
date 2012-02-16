@@ -1,0 +1,36 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "ChangeLog";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+
+
+	<h1>
+        Change Log</h1>
+    <p>
+        These are the changes included in this release:</p>
+    
+        <# if (Package.Id.Contains("2008"))
+        {
+        #>       
+            <#@ include file="ChangeLogVS2008.include.tt" #>
+        <#    
+        }
+        else
+        {
+        #>
+            <#@ include file="ChangeLogVS2010.include.tt" #>
+        <#    
+        }
+        #>
+     
+</div>
+<#@ include file="Master.Footer.include.tt" #>

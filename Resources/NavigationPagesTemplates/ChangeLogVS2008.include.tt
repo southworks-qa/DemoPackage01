@@ -1,0 +1,107 @@
+<ul class="getStartedList">
+  <li>
+    <strong>Asynchronous Workload Handling</strong>
+    <ul>
+      <li>New lab</li>
+      <li>Visual Studio 2008 .NET Framework 3.5 version</li>
+      <li>C# and VB.NET support</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Windows Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Exercise 1 split into two separate exercises</li>
+      <li>New section on using Storage Explorer in Windows Azure Tools for Visual Studio</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Deploying Applications in Windows Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Created a new exercise - Using Visual Studio to Deploy Applications</li>
+      <li>Removed Monitoring exercise</li>
+      <li>Removed Monitoring code from SSL exercise solutions</li>
+      <li>Upgraded AspProviders to latest version (common to all labs)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Worker Role Communication</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Fixed minor bug in SessionManager class</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Exploring Windows Azure Storage</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Updated steps to open Azure Drive folder</li>
+      <li>Fixed bug in the VHDUpload tool where upload failed if container was missing</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to Service Bus</strong>
+    <ul>
+      <li>Upgraded to AppFabric SDK - July 2010 Update</li>
+      <li>Service Remoting with Service Bus</li>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2 and AppFabric SDK - July 2010 Update</li>
+      <li>Fixed minor bug in CrmDataService class and PathTooLong errors</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Service Remoting with Service Bus</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2 and AppFabric SDK - July 2010 Update</li>
+      <li>Fixed minor bug in CrmDataService class and PathTooLong errors</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Eventing with Service Bus</strong>
+    <ul>
+      <li>Updated to AppFabric SDK - July 2010 Update</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Building Web Form Apps with Windows Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Live ID exercise removed</li>
+    </ul>
+  </li>
+  <li>
+    <strong>MVC Apps with Windows Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Live ID exercise removed</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Introduction to SQL Azure</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+    </ul>
+  </li>
+  <li>
+    <strong>SQL Azure Tips and Tricks</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Updated Metrics exercise output and fixed bug in VB version</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure Native</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Enhanced troubleshooting section</li>
+      <li>Fixed incorrect calling convention in p/invoke signature and project build order bug</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Windows Azure PHP</strong>
+    <ul>
+      <li>Upgraded to Windows Azure Tools for Visual Studio 1.2</li>
+      <li>Tested with the latest PHP release (v5.3.2)</li>
+    </ul>
+  </li>
+</ul>

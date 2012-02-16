@@ -1,0 +1,91 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Presentations";
+#>
+<#@ include file="Master.Header.include.tt" #>
+
+                <div class="twoColWrapper_80_20">
+                    <div class="col01">
+                        <h1>Presentations</h1>
+                        
+                    <# var presentations = Package.Units.SelectMany(u => u.Presentations); 
+					   if(presentations.Count() == 0) 
+					   { 
+					#>     <p>Presentations will be updated after PDC 2009 with all of the latest and greatest decks.</p>
+					<# }
+					   else
+					   {
+					#>
+                    <p>
+						This page lists the presentations that are included in the <#= Package.Name #>.
+                    	&nbsp;These presentations include the source code and presentation scripts.                    	
+                    </p>
+                    <# 
+					   }  // else empty Presentations
+					#>
+					<# foreach (Unit unit in Package.Units)
+					 {
+						if (unit.Presentations.Count() > 0)
+						{
+					 #>
+
+					    <div class="hr"><img src="images/hr-gradient-right-side.jpg" /></div>
+                        <a name="<#= TrimAndEscape(unit.Id) #>"></a>
+                        <h2><#= unit.Name #></h2> 					     
+					     
+                        <ul class="getStartedList">
+								<# foreach (Presentation presentation in unit.Presentations)
+								{
+								#>
+							<li>
+								<a name="<#= TrimAndEscape(presentation.Id) #>"></a><strong><#= presentation.Title #></strong><br /><#= presentation.Description #><br />
+								<ul class="anchorLinks">
+									<li class="last"><a href="<#= String.IsNullOrEmpty(presentation.Document.DocumentLink) ? "#" : Path.Combine(presentation.DestinationPath, presentation.Document.DocumentLink) #>">View Presentation</a></li>
+								</ul>
+							</li>
+								<#   } // foreach presentation #>
+						</ul>
+						<p><a href="#top">Top of page</a></p>
+						<#
+						} // if presentations
+						#>	
+						
+					<# } //foreach unit #>
+					</div>
+                    <div class="vr">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col02">
+						<h2>Navigate by Service</h2>
+						<# foreach (Unit unit in Package.Units)
+					     {
+							if (unit.Presentations.Count() > 0)
+							{ #>
+							  <a href="#<#= TrimAndEscape(unit.Id) #>"><#= unit.Name #></a>
+							  <div class="hrSmColumn">
+							  </div>
+						 <# } #>
+						<# } #>
+					</div>
+					<div class="clearBoth">
+                    </div>
+                </div>
+<#@ include file="Master.Footer.include.tt" #>
+<#+ 
+string TrimAndEscape(string text)
+{
+    return text.Trim().Replace(' ', '_');
+}
+ #>

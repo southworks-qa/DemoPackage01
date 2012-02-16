@@ -1,0 +1,94 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Samples";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+	<h1>Samples &amp; Tools</h1>
+	<p>This page lists a few of the key Windows Azure Platform samples and tools that are available,
+	in addition to the samples included in the Software Development Kits (SDKs).  
+	&nbsp;Follow the links below to download the latest version of these samples and tools.</p>
+	<div class="hr">
+	<img src="images/hr-gradient-right-side.jpg" /></div>
+	<ul class="linkList allItemsList" id="CaseStudiesList">
+		<li>
+			<div class="companyLogo"><img alt="Windows Azure MMC" src="images/WindowsAzureMMC.png" /></div>
+			<p>
+				<span class="title"><a href="http://code.msdn.microsoft.com/windowsazuremmc" target="_blank">Windows Azure MMC</a></span><br />					
+				The Windows Azure Management Tool was created to manage your accounts in Windows Azure. Developed as a managed MMC, the tool allows you to create and manage both blobs and queues. Easily create and manage containers, blobs, and permissions. Add and remove queues, inspect or add messages or empty queues as well. </span>
+				<br />
+				<br />Download the Windows Azure MMC from <a href="http://code.msdn.microsoft.com/windowsazuremmc">http://code.msdn.microsoft.com/windowsazuremmc</a>
+			</p>
+		</li>
+		<li class="hr"><img src="images/hr-gradient-right-side.jpg" /></li>
+				<li>
+			<div class="companyLogo"><img alt="Windows Azure Service Management CmdLets" src="images/cmdlets.png" /></div>
+			<p>
+				<span class="title"><a href="http://code.msdn.microsoft.com/azurecmdlets" target="_blank">Windows Azure Service Management CmdLets </a></span><br />					
+				A set of PowerShell cmdlets wrapping the Windows Azure Service Management API. These cmdlets make it simple to script out your deployments, upgrades, and scaling of your Windows Azure applications. 
+ </span>
+				<br />
+				<br />Download the Windows Azure Service Management CmdLets from <a href="http://code.msdn.microsoft.com/azurecmdlets">http://code.msdn.microsoft.com/azurecmdlets</a>
+			</p>
+		</li>
+		<li class="hr"><img src="images/hr-gradient-right-side.jpg" /></li>
+		<!-- MAY NEED UPDATING 
+		<li>
+			<div class="companyLogo"><img alt="PhluffyFotos" src="images/phluffy.png" /></div>
+			<p>
+				<span class="title"><a href="http://phluffyfotos.codeplex.com/" target="_blank">PhluffyFotos</a></span><br />					
+				PhluffyFotos is a Web 2.0 Picture Gallery Service where users can upload their pictures from the web or mobile device. This sample is designed to demonstrate the core features of Windows Azure. Users can upload, tag, and share photos in this sample. A Silverlight Album viewer is also included (<a href="http://www.codeplex.com/SlideShow2">http://www.codeplex.com/SlideShow2</a> to make browsing photos easy.
+				The demo utilizes several technologies including: ASP.NET MVC, Silverlight, and Windows Azure tables, blobs, and queues. In this sample, you will see how to pull together both web and worker roles to build cloud applications.  </span>
+				<br />
+				<br />Download PhluffyFotos from <a href="http://phluffyfotos.codeplex.com/">http://phluffyfotos.codeplex.com/</a>
+			</p>
+		</li>
+		-->
+		<li class="hr"><img src="images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="BidNow" src="images/demo_bid_now_thumbnail.png" /></div>
+			<p>
+				<span class="title"><a href="http://code.msdn.microsoft.com/BidNowSample" target="_blank">BidNow</a></span><br />					
+				BidNow is an online auction site designed to demonstrate how you can build highly scalable consumer applications running in the Windows Azure Platform. 
+				<br />
+				<br />In addition to Windows Azure Web and Worker roles, BidNow uses SQL Azure for relational data storage, Access Control for authentication andauthorization, Caching to store reference and activity data, OData services to extend reach, and a Windows Phone 7 client to demonstrate how to use cloud services from a mobile device.
+				<br />
+				<br />Download BidNow from <a href="http://code.msdn.microsoft.com/BidNowSample">http://code.msdn.microsoft.com/BidNowSample</a>
+			</p>
+		</li>
+
+		<li class="hr"><img src="images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="FabrikamShipping SaaS" src="images/demo_fabrikamshipping_thumbnail.png" /></div>
+			<p>
+				<span class="title"><a href="http://www.fabrikamshipping.com" target="_blank">FabrikamShipping SaaS</a></span><br />					
+				FabrikamShipping SaaS is a full end to end sample scenario which demonstrates how to use the Windows Azure platform for exposing an application as a service. It features a number of advanced tasks such as developing long running processes, automated SQL Azure and Hosted Services provisioning, PayPal API integration, self-service federation and access control rules provisioning, account activation and social providers integration, Multi-tenancy, email notifications, MVC and Windows Identity Foundation integration, secure REST services via OAuth2, and much more. 
+				<br />
+				<br />Visit the FabrikamShipping home page at <a href="http://www.fabrikamshipping.com">http://www.fabrikamshipping.com</a>: there you will be able to interact with a live instance of the demo and download the full source code of the solution.
+			</p>
+		</li>
+
+		<!-- MAY NEED UPDATING 
+		<li class="hr"><img src="images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="Contoso Cycles" src="images/demo_Contoso_Cycles_thumbnail.png" /></div>
+			<p>
+				<span class="title"><a href="http://code.msdn.microsoft.com/contosocycles" target="_blank">Contoso Cycles</a></span><br />					
+				Contoso Cycles shows how the Azure Services Platform can be used to build a supply chain application. .NET Services allows messages to flow between companies across firewalls, NATs and routers.</span>
+				<br />
+				<br />Download the Contoso Cycles from <a href="http://code.msdn.microsoft.com/contosocycles">http://code.msdn.microsoft.com/contosocycles</a>
+			</p>
+		</li>-->
+		<li class="clearBoth"></li>
+	</ul>
+</div>
+<#@ include file="Master.Footer.include.tt" #>

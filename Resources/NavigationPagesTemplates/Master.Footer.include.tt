@@ -1,0 +1,23 @@
+﻿            </div> 
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="microsoftLink">
+            <a href="http://www.microsoft.com/" title="Microsoft">
+                <img alt="Microsoft" src="images/ms-logo-footer.gif" /></a>
+        </div>
+        <div class="leftSideLinks">
+            <span>Windows Azure Platform Training Kit</span>
+            &nbsp;&nbsp;&nbsp;
+            <a href="mailto:azcfeed@microsoft.com?subject=<#= Package.Overview.Title #>">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="EULA.htm" target="_parent">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href=".\">Browse Content</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			 &copy;&nbsp;2010 Microsoft</div>
+    </div>
+	
+	<embed id="dcDetectorMoz" type="application/dc-plugin" style="height:0px;width:0px"></embed>
+	<object id="dcDetectorIE" classid="CLSID:4A5C71B6-C5C0-41EB-8917-16014CDF375B" style="height:0px;width:0px"></object>
+	<script type="text/javascript" src="scripts/deplinks.js"></script>
+</body>
+</html>
