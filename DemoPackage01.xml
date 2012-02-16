@@ -39,7 +39,6 @@
       <Id>WindowsAzure</Id>
       <Name>Windows Azure</Name>
       <Labs>
-        <Lab>git@seattle.southworksinc.com:dpetools-qa\managed\development\DemoPackages\Content\Labs\ECSTesting\Lab2Test</Lab> <!-- Updated -->
         <Lab>git@github.com:southworks-qa/Lab1Test.git</Lab> <!-- Updated -->
       </Labs>
       <Demos>
