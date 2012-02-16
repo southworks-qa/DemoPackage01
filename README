@@ -1,0 +1,8 @@
+This is the DemoPackage01.xml file which was created for testing purposes.
+Its contents are:
+
+Lab1Test: from Lab1Test.git repository
+Demo1Test: from Demo1Test.git repository
+Presentation1Test: from Presentation1Test.git repository
+
+The paths inside the xml file are all absolute paths as required.
