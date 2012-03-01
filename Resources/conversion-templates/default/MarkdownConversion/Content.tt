@@ -1,0 +1,55 @@
+<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="System.Web.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Web" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#@ property name="Content" processor="PropertyProcessor" #>
+<#@ property name="Document" processor="PropertyProcessor" #>
+
+<#@ include file="Master.Header.include.tt" #>
+<#@ include file="TableOfContents.include.tt" #>
+
+<section id="doc">
+<#
+foreach (var topic in Document.Topics)
+{
+#>
+<#= topic.Content #>
+<#
+}
+#>
+</section>
+
+<script>
+	$(document).ready(function () {
+		if (!$('pre').attr('class') == 'none') {
+			$('pre').addClass('prettyprint');
+		}
+		prettyPrint();
+	});
+</script>
+
+<#@ include file="Master.Footer.include.tt" #>
+
+
+<#+
+class Heading
+{
+	public string ID { get; set; }
+
+	public int Level { get; set; }
+
+	public string Text { get; set; }
+}
+#>
