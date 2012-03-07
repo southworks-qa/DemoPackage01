@@ -2,8 +2,8 @@
 <Package xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
   <Description>Testing package for GitHub 1. Content paths pointing to contents inside the ECS-Contents and ECS-SingleContent repos in GitHub</Description>
   <Id>DemoTrainingCourse</Id>
-  <Version>1.0</Version>
-  <Name>Demo Training Course</Name>
+  <Version>1.1</Version>
+  <Name>DemoPackage01 (Test GitHub)</Name>
   <DownloadUrl>http://go.microsoft.com/fwlink/?LinkID=130354</DownloadUrl>
   <Overview>
     <Author>
