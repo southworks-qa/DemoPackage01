@@ -1,0 +1,21 @@
+﻿        </div>
+    </div>
+    <div class="footer">
+        <div class="microsoftLink">
+            <a href="http://www.microsoft.com/" title="Microsoft">
+                <img alt="Microsoft" src="images/ms-logo-footer.png" /></a>
+        </div>
+        <div class="leftSideLinks">
+            <!--<span><#= Package.Name #></span>-->
+            &nbsp;&nbsp;&nbsp;
+			<# if (Content.CustomProperties.ContainsKey("GithHubRepository"))
+			{ #>
+			<a href="<#=Content.CustomProperties["GithHubRepository"] + "/issues"#>" target="_new">File an Issue</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<# } #>
+			<a href="mailto:<#= Package.Feedback #>?subject=<#= Package.Overview.Title #>">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="EULA.htm" target="_parent">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href=".\">Browse Content</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			 &copy;&nbsp;2012 Microsoft</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Learn Windows Azure Training Kit - Home</title>
+    <link rel="Stylesheet" type="text/css" media="all" href="styles/master.css" />
+</head>
+<body>
+    <div id="outerWrapper">
+        <div id="wrapper" class="landingPage getStartedPage">
+            <div id="whiteBkgdStrip">
+            </div>
+            <div class="header">
+                <div class="mainHomepageTitle">
+				</div>
+				<div class="nav-menu-header">
+					<div class="AspNet-Menu-Horizontal" id="ctl00_TopNavMenu">
+						<#						
+						if (Content.CustomProperties.ContainsKey("GithHubRepository"))
+						{
+						#>
+						<a href="<#=Content.CustomProperties["GithHubRepository"]#>" target="_new"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>	
+						<#
+						}
+						#>
+						<ul class="AspNet-Menu">
+							<li class="AspNet-Menu-Leaf AspNet-Menu-Selected">
+								<a id="leftMenu" class="AspNet-Menu-Link AspNet-Menu-Selected" href="default.htm">Content</a>
+							</li>
+							<li class="AspNet-Menu-Leaf">
+								<a id="rightMenu" class="AspNet-Menu-Link" href="Source">Setup</a>
+							</li>
+							<li class="AspNet-Menu-Leaf">
+								<a id="rightMenu" class="AspNet-Menu-Link" href="#">About</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+            </div>		
+            <div class="contentWrapper">
+			<a name="top"></a>
