@@ -42,7 +42,7 @@
         <Lab>git://github.com/southworks-qa/Lab1Test.git</Lab> <!-- Updated -->
       </Labs>
       <Demos>
-        <Demo>git://github.com/southworks-qa/Demo1Test.git</Demo> <!-- Updated -->
+        <!-- <Demo>git://github.com/southworks-qa/Demo1Test.git</Demo> -->
         <Demo>git://github.com/southworks-qa/Test-Changeset--Lab1Test-Modified-.git</Demo>
       </Demos>
       <Presentations>
