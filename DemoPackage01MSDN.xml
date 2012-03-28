@@ -52,6 +52,7 @@
       </Videos>
       <Tutorials>
 		<Tutorial>git@github.com:southworks-qa/Tutorial1Test.git</Tutorial>
+		<Tutorial>git@github.com:WindowsAzure-TrainingKit/Tutorial-HelloWindowsAzure.git</Tutorial>
       </Tutorials>
     </Unit>
   </Units>
