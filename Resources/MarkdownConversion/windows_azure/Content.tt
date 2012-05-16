@@ -13,9 +13,9 @@
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="System.Xml" #>
 <#@ import namespace="System.Web" #>
-<#@ property name="Package" processor="PropertyProcessor" #>
-<#@ property name="Content" processor="PropertyProcessor" #>
-<#@ property name="Document" processor="PropertyProcessor" #>
+<#@ property name="Package" type="ContentFramework.Model.Package" processor="PropertyProcessor" #>
+<#@ property name="Content" type="ContentFramework.Model.DocumentMetadata" processor="PropertyProcessor" #>
+<#@ property name="Document" type="ContentFramework.Model.ConvertibleDocument" processor="PropertyProcessor" #>
 
 <#@ include file="Master.Header.include.tt" #>
 
