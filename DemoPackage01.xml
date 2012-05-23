@@ -40,6 +40,7 @@
       <Name>Windows Azure</Name>
       <Labs>
         <Lab>git@github.com:southworks-qa/Lab1Test.git</Lab> <!-- Updated -->
+        <Lab>git@github.com:southworks-qa/Lab1Test-ErrorAccess.git</Lab>
       </Labs>
       <Demos>
         <Demo>git@github.com:southworks-qa/Demo1Test.git</Demo>
