@@ -40,7 +40,6 @@
 		<Name>Web Sites</Name>
 		<Thumbnail>Assets\Resources\WinAzurePlatFlagLogo.png</Thumbnail>
 		<Labs>
-			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryWithAzureWebSites-Windows.git</Lab>
 			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryAzureWebSites-OSX.git</Lab>					
 			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAppsWithAzureWebSitesAndWebMatrix2.git</Lab>
 			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-NodejsAzureWebSites-OSX.git</Lab>	
