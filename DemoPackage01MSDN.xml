@@ -44,7 +44,7 @@
 			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETWebAppsWithAzureWebSitesAndVS2012.git</Lab> -->
 			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-AzureWebSitesAndVMsNetAndSQL.git</Lab> -->
 			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebSitesAndVMsNode.git</Lab> -->
-			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAppsWithVisualStudio2012AndTFS.git</Lab> -->
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAppsWithVisualStudio2012AndTFS.git</Lab>
 			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-NodejsAzureWebSites.git</Lab>
 			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryWithAzureWebSites-Windows.git</Lab> -->
 			<!-- <Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryAzureWebSites-OSX.git</Lab> -->					
