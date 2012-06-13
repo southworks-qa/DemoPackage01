@@ -31,31 +31,29 @@
       </Prerequisites>
     </Group>
   </Prerequisites>
-  <Units xmlns:d="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <Unit>
-      <Description>
-        Windows Azure is an internet-scale cloud computing and services platform hosted in Microsoft data centers, which provides an operating system and a set of developer services which can be used individually or together. It gives developers the choice to build web applications; applications running on connected devices, PCs, or servers; or hybrid solutions offering the best of both worlds. New or enhanced applications can be built using existing skills with the Visual Studio development environment and the .NET Framework. With its standards-based and interoperable approach, the services platform supports multiple internet protocols, including HTTP, REST, SOAP, and plain XML
-      </Description>
-      <Id>WindowsAzure</Id>
-      <Name>Windows Azure</Name>
-      <Labs>
-        <Lab>git://github.com/southworks-qa/Lab1Test.git</Lab> <!-- Updated -->
-      </Labs>
-      <Demos>
-        <Demo>git://github.com/southworks-qa/Demo1Test.git</Demo> <!-- Updated -->
-      </Demos>
-      <Presentations>
-		<Presentation>git://github.com/southworks-qa/Presentation1Test.git</Presentation> <!-- Updated -->
-      </Presentations>
-      <Videos>
-		<!-- <Video>..\ECS-Contents.git\Videos\ECSTesting\Video1Test</Video> -->
-      </Videos>
-      <Tutorials>
-		<Tutorial>git@github.com:southworks-qa/Tutorial1Test.git</Tutorial>
-		<Tutorial>git@github.com:WindowsAzure-TrainingKit/Tutorial-HelloWindowsAzure.git</Tutorial>
-      </Tutorials>
-    </Unit>
-  </Units>
+ <Units xmlns:d="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+	<Unit>
+		<Description>
+			Windows Azure provides the ability to quickly and easily create and deploy websites with support for multiple application frameworks and preloaded with popular open source applications including WordPress, Drupal, Joomla! and Umbraco. A website is the host for a web application running in the cloud that you can control and manage. After you create a website in Windows Azure you can start, stop, and delete it whenever you need to and you can access the website as easily as you access a website hosted on a web server in your office.
+		</Description>
+		<Id>WebSites</Id>
+		<Name>Web Sites</Name>
+		<Thumbnail>Assets\Resources\WinAzurePlatFlagLogo.png</Thumbnail>
+		<Labs>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAzureWebSites.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETWebAppsWithAzureWebSitesAndVS2012.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-AzureWebSitesAndVMsNetAndSQL.git</Lab>	
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebSitesAndVMsNode.git</Lab>	
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAppsWithVisualStudio2012AndTFS.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-NodejsAzureWebSites.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryWithAzureWebSites-Windows.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-WebAppGalleryAzureWebSites-OSX.git</Lab>					
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-ASPNETAppsWithAzureWebSitesAndWebMatrix2.git</Lab>
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-NodejsAzureWebSites-OSX.git</Lab>	
+			<Lab>git@github.com:WindowsAzure-TrainingKit/HOL-PHPAppsAzureWebSites-OSX.git</Lab>
+		</Labs>		
+	</Unit>      
+  </Units> 
   <CustomProperties>
     <Property Name="AzureHomeLink" Value="http://www.microsoft.com/azure/default.mspx" />
     <Property Name="AzureMsdnLink" Value="http://msdn.microsoft.com/en-us/azure/cc994380.aspx" />
