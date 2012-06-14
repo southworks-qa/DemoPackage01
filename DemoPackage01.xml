@@ -34,10 +34,10 @@
   <Units xmlns:d="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <Unit>
       <Description>
-        Windows Azure is an internet-scale cloud computing and services platform hosted in Microsoft data centers, which provides an operating system and a set of developer services which can be used individually or together. It gives developers the choice to build web applications; applications running on connected devices, PCs, or servers; or hybrid solutions offering the best of both worlds. New or enhanced applications can be built using existing skills with the Visual Studio development environment and the .NET Framework. With its standards-based and interoperable approach, the services platform supports multiple internet protocols, including HTTP, REST, SOAP, and plain XML
+		For testing purposes
       </Description>
-      <Id>WindowsAzure</Id>
-      <Name>Windows Azure</Name>
+      <Id>DemoPackage</Id>
+      <Name>DemoPackage</Name>
       <Labs>
         <Lab>git@github.com:southworks-qa/Lab1Test.git</Lab> <!-- Updated -->
       </Labs>
